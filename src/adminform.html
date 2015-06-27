@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Classified</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+		<!-- Fav and touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="img/favicon.png">
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</head>
+
+	<body>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/src/">Classified</a>
+				</div>
+
+				<div id="navbar" class="navbar-collapse collapse">
+					<a href="postad.html" class="btn btn-info navbar-btn navbar-left">Post Ad</a>
+
+					<ul class="nav navbar-nav navbar-left">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">One more separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<form class="navbar-form navbar-left" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-primary">
+									Go!
+								</button> </span>
+						</div>
+					</form>
+
+					<p class="navbar-text navbar-right">
+						Philadelphia, PA
+					</p>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-8 column">
+					<h2>Adminstration</h2>
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#location">Add/Edit Location</a></h4>
+							</div>
+							<div id="location" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<form class="form-horizontal" role="form">
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="existing country">Existing Country:</label>
+											<div class="col-sm-10">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="countrydropdown" data-toggle="dropdown">
+														Country <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" role="menu" aria-labelledby="countrydropdown">
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">USA</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">India</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">Sri Lanka</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">Canada</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="add country">Add/Change Country:</label>
+											<div class="col-sm-5">
+												<input type="text" class="form-control" id="country" placeholder="Add/Change Country">
+											</div>
+											<div class="col-sm-5">
+												<button type="submit" class="btn btn-primary">
+													Add/Update
+												</button>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="existing country">Existing States:</label>
+											<div class="col-sm-10">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="statedropdown" data-toggle="dropdown">
+														States <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" role="menu" aria-labelledby="statedropdown">
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">Pensylvania</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">Florida</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">Taxes</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">California</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="add country">Add/Change States:</label>
+											<div class="col-sm-5">
+												<input type="text" class="form-control" id="state" placeholder="Add/Change State">
+											</div>
+											<div class="col-sm-5">
+												<button type="submit" class="btn btn-primary">
+													Add/Update
+												</button>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="existing country">Existing Cities:</label>
+											<div class="col-sm-10">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="citydropdown" data-toggle="dropdown">
+														Cities <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" role="menu" aria-labelledby="citydropdown">
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">Philadelphia</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">Media</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">ABC</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">XYZ</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="add country">Add/Change Cities:</label>
+											<div class="col-sm-5">
+												<input type="text" class="form-control" id="city" placeholder="Add/Change City">
+											</div>
+											<div class="col-sm-5">
+												<button type="submit" class="btn btn-primary">
+													Add/Update
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#category">Add/Edit Category/Sub Category</a></h4>
+							</div>
+							<div id="category" class="panel-collapse collapse">
+								<div class="panel-body">
+									<form role="form" class="form-horizontal" action="listing.html">
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="existing country">Existing Categories:</label>
+											<div class="col-sm-10">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="categorydropdown" data-toggle="dropdown">
+														Category <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" role="menu" aria-labelledby="categorydropdown">
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">buy/ sell/ trade</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">rentals</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">adult </a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">musician</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="add country">Add/Change Category:</label>
+											<div class="col-sm-5">
+												<input type="text" class="form-control" id="category" placeholder="Add/Change Category">
+											</div>
+											<div class="col-sm-5">
+												<button type="submit" class="btn btn-primary">
+													Add/Update
+												</button>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="existing country">Existing Sub Categories:</label>
+											<div class="col-sm-10">
+												<div class="dropdown">
+													<button class="btn btn-default dropdown-toggle" type="button" id="subcategorydropdown" data-toggle="dropdown">
+														Sub Category <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" role="menu" aria-labelledby="subcategorydropdown">
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">roommates</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">apt/condo/house</a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">commercial </a>
+														</li>
+														<li role="presentation">
+															<a role="menuitem" tabindex="-1" href="#">rentals wanted</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="add sub category">Add/Change Sub Category:</label>
+											<div class="col-sm-5">
+												<input type="text" class="form-control" id="category" placeholder="Add/Change Sub Category">
+											</div>
+											<div class="col-sm-2 checkbox">
+												<label>
+													<input type="checkbox">
+													Adult Only</label>
+											</div>
+											<div class="col-sm-3">
+
+												<button type="submit" class="btn btn-primary">
+													Add/Update
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#addvertisement">Adverterisment</a></h4>
+							</div>
+							<div id="addvertisement" class="panel-collapse collapse">
+								<div class="panel-body">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--first column end-->
+				<div class="col-md-4 column"></div>
+			</div>
+			<!--Row end-->
+		</div>
+
+	</body>
+</html>

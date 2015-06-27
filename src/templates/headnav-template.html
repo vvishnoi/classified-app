@@ -1,0 +1,51 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/src/">Classified</a>
+		</div>
+
+		<div id="navbar" class="navbar-collapse collapse">
+			<a href="postad.html" class="btn btn-info navbar-btn navbar-left">Post Ad</a>
+
+			<form class="navbar-form navbar-left" role="search">
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button class="btn btn-default dropdown-toggle " data-toggle="dropdown"  aria-expanded="false">
+							{{categoryCtrl.getCategory()}} <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" >
+							<li ng-repeat="category in categoryCtrl.categories">
+								<a href="#" ng-click="categoryCtrl.setCategory(category.name)">{{category.name}}</a>
+							</li>
+						</ul>
+					</div>
+					<input type="text" class="form-control" placeholder="Search" ng-model="searchQ">
+					<div class="input-group-btn">
+						<button type="submit" class="btn btn-primary" ng-click="categoryCtrl.search()">
+							Go!
+						</button>
+					</div>
+				</div>
+			</form>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="login.html"><i class="fa fa-sign-in"></i>Sign in</a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-sign-out"></i> Sign Out</a>
+				</li>
+				<li>
+					<a href="location.html">Philadelphia, PA</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</nav>

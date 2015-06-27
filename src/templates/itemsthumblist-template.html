@@ -1,0 +1,92 @@
+<div class="row clearfix" ng-show="categoryCtrl.showfeeds">
+	<div class="col-md-10 column">
+		<div class="row clearfix">
+			<div class="col-md-8 column">
+				<ol class="breadcrumb ">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">For Sale</a>
+					</li>
+					<li class="active">
+						Cell Phone
+					</li>
+				</ol>
+			</div>
+			<div class="col-md-4 column">
+				<div class="btn-group btn-group-xs pull-right" role="group" aria-label="...">
+					<a href="listing.html" class="btn btn-default"> List </a>
+					<a href = "#" class="btn btn-default active"> Thumbnail </a>
+					<a href="listinggalary.html" class="btn btn-default"> Galary </a>
+
+					<div class="btn-group btn-group-xs" role="group">
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							Sort
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="#">Newest First</a>
+							</li>
+							<li>
+								<a href="#">Price: Lowest First</a>
+							</li>
+							<li>
+								<a href="#">Price: Highest First</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<ul class="media-list">
+			<li class="media" ng-repeat="feed in categoryCtrl.feeds">
+				<div class="media-left">
+					<a href="itemdetails.html"> <img class="media-object img-circle" ng-src="{{feed.images.thumbnail}}" alt="..."> </a>
+				</div>
+				<div class="media-body">
+					<h5 class="media-heading"><a href="itemdetails.html"> {{feed.title}} </a><small class="pull-right">Location - {{feed.location}}, Asked Price - {{feed.price | currency}} </small>
+					<br/>
+					<small class="text-muted">{{feed.datetime}}</small></h5>
+					<p>
+						{{feed.details}}
+					</p>
+					<div class="pull-right">
+						<a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> 10 </a>
+						<a class="btn btn-xs btn-white"><i class="fa fa-thumbs-down"></i>6 </a>
+
+					</div>
+				</div>
+			</li>
+			<li class="divider"></li>
+		</ul>
+
+		<nav>
+			<ul class="pagination">
+				<li>
+					<a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
+				</li>
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
