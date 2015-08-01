@@ -1,0 +1,83 @@
+[
+		{
+			"id" : "item01",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		},
+		{
+			"id" : "item02",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		},
+		{
+			"id" : "item03",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		},
+		{
+			"id" : "item04",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		},
+		{
+			"id" : "item05",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		},
+		{
+			"id" : "item06",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		},
+		{
+			"id" : "item07",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		},
+		{
+			"id" : "item01",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		},
+		{
+			"id" : "item09",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		},
+		{
+			"id" : "item10",
+			"category" : "real-estate",
+			"subcategory" : "apts-housing",
+			"image" : "http://lorempixel.com/600/200/sports/",
+			"title" : "Title  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit - Thumbnail label",
+			"adult" : "no"
+		}
+
+]

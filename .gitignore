@@ -6,3 +6,5 @@ tmp
 .DS_Store
 components/
 .project
+.settings
+.tern-project

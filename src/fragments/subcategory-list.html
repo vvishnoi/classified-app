@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-10 column">
+			<ul class="media-list">
+				<li class="media" ng-repeat="item in items">
+					<div class="media-left">
+						<a
+							href="#/categories/{{item.category}}/{{item.subcategory}}/{{item.id}}">
+							<img class="media-object img-circle" ng-src="{{item.image}}"
+							alt="...">
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading">
+							<a
+								href="#/categories/{{item.category}}/{{item.subcategory}}/{{item.id}}">{{item.title}}</a><small
+								class="pull-right">Location - Philadelphia, Asked Price
+								- $150 </small> <br /> <small class="text-muted">Yesterday 5:20
+								pm - 12.06.2014</small>
+						</h5>
+						<p>{{item.title}}</p>
+						<div class="pull-right">
+							<a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i>
+								10 </a> <a class="btn btn-xs btn-white"><i
+								class="fa fa-thumbs-down"></i>6 </a>
+
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,185 @@
+[
+	{
+		"id":"real-estate",
+		"name":"Real Estate",
+		"imageUrl":"img/categories/real-estate.0.jpg",
+		"subcategories":[
+			{
+				"id":"apts-housing",
+				"name":"apts / housing"
+			},
+			{
+				"id":"housing-swap",
+				"name":"housing swap"
+			},
+			{
+				"id":"housing-wanted",
+				"name":"housing wanted"
+			},
+			{
+				"id":"office-commercial",
+				"name":"office / commercial"
+			},
+			{
+				"id":"parking-storage",
+				"name":"parking / storage"
+			},
+			{
+				"id":"real-estate-for-sale",
+				"name":"real estate for sale"
+			},
+			{
+				"id":"rooms-shared",
+				"name":"rooms / shared"
+			},
+			{
+				"id":"rooms-wanted",
+				"name":"rooms wanted"
+			},
+			{
+				"id":"sublets-temporary",
+				"name":"sublets / temporary"
+			},
+			{
+				"id":"vacation-rentals",
+				"name":"vacation rentals"
+			}
+			
+		],
+		"adult":"no"
+	},
+	{
+		"id":"personals",
+		"name":"Personals",
+		"imageUrl":"img/categories/personals.0.jpg",
+		"subcategories":[
+			{
+				"id":"strictly-platonic",
+				"name":"strictly platonic"
+			},
+			{
+				"id":"women-seek-women",
+				"name":"women seek women"
+			},
+			{
+				"id":"women-seeking-men",
+				"name":"women seeking men"
+			},
+			{
+				"id":"men-seeking-women",
+				"name":"men seeking women"
+			},
+			{
+				"id":"men-seeking-men",
+				"name":"men seeking men"
+			},
+			{
+				"id":"misc-romance",
+				"name":"misc romance"
+			},
+			{
+				"id":"casual-encounters",
+				"name":"casual encounters"
+			},
+			{
+				"id":"missed-connections",
+				"name":"missed connections"
+			},
+			{
+				"id":"rants-and-raves",
+				"name":"rants and raves"
+			}
+			
+		],
+		"adult":"yes"
+	},
+	{
+		"id":"services",
+		"name":"Services",
+		"imageUrl":"img/categories/services.0.jpg",
+		"subcategories":[
+			{
+				"id":"automotive",
+				"name":"automotive"
+			},
+			{
+				"id":"beauty",
+				"name":"beauty"
+			},
+			{
+				"id":"computer",
+				"name":"computer"
+			},
+			{
+				"id":"creative",
+				"name":"creative"
+			},
+			{
+				"id":"cycle",
+				"name":"cycle"
+			},
+			{
+				"id":"event",
+				"name":"event"
+			},
+			{
+				"id":"farm-garden",
+				"name":"farm+garden"
+			},
+			{
+				"id":"financial",
+				"name":"financial"
+			},
+			{
+				"id":"household",
+				"name":"household"
+			},
+			{
+				"id":"labor-move",
+				"name":"labor/move"
+			},
+			{
+				"id":"legal",
+				"name":"legal"
+			},
+			{
+				"id":"lessons",
+				"name":"lessons"
+			},
+			{
+				"id":"marine",
+				"name":"marine"
+			},
+			{
+				"id":"pet",
+				"name":"pet"
+			},
+			{
+				"id":"real-estate",
+				"name":"real estate"
+			},
+			{
+				"id":"skilld-trade",
+				"name":"skill'd trade"
+			},
+			{
+				"id":"sm-biz-ads",
+				"name":"sm biz ads"
+			},
+			{
+				"id":"therapeutic",
+				"name":"therapeutic"
+			},
+			{
+				"id":"travel/vac",
+				"name":"travel/vac"
+			},
+			{
+				"id":"write/ed/tr8",
+				"name":"write/ed/tr8"
+			}
+			
+		],
+		"adult":"no"
+	}
+]

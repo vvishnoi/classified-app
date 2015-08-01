@@ -1,29 +1,49 @@
 'use strict';
 
 /* Controllers */
-var classfiedControllers = angular.module('classfiedControllers' []);
+var classifiedControllers = angular.module('classifiedControllers', []);
 
-classfiedControllers.controller('navCategoryCtrl', function(searchService) {
+classifiedControllers.controller("CategoryListCtrl", [ '$scope', 'Category',
+		function($scope, Category) {
+			console.info('CategoryListCtrl');
+			$scope.categories = Category.query();
 
-	this.categories = categoriesData;
-	this.selectedCategory = 'Category';
-	this.feeds = '';
-	this.showfeeds = false;
-	this.searchQ = '';
+		} ]);
 
-	this.setCategory = function(selectedCategory) {
-		this.selectedCategory = selectedCategory;
-	};
+classifiedControllers.controller("SubCategoryListCtrl", [ '$scope',
+		'$routeParams', 'SubCategory',
+		function($scope, $routeParams, SubCategory) {
+			console.info('SubCategoryListCtrl');
+			console.info($routeParams);
+			$scope.items = SubCategory.query();
+		} ]);
 
-	this.getCategory = function() {
-		return this.selectedCategory;
-	};
+classifiedControllers.controller("ItemDetailCtrl", [ '$scope', '$routeParams',
+		'Item', function($scope, $routeParams, Item) {
+			console.info('ItemDetailCtrl');
+			console.info($routeParams);
 
-	this.search = function() {
-		// http call with selected category
-		searchService.search('vishal');
-		this.searchQ = '';
-		this.showfeeds = true;
-		this.feeds = feedsData;
-	};
-});
+			// Get Item Detail - service Call
+			$scope.itemDetail = Item.get();
+
+			// Tab start
+			$scope.tab = 1;
+			$scope.setTab = function(value) {
+				$scope.tab = value;
+			};
+
+			$scope.isSet = function(value) {
+				return ($scope.tab === value);
+			}
+			// End Tab
+
+			// Contact Form
+			$scope.contact = {};
+			$scope.submitForm = function() {
+				// TODO call service
+				console.info("contactForm" + console);
+
+			};
+
+		}
+]);
