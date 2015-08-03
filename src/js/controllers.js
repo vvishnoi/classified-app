@@ -8,6 +8,13 @@ classifiedControllers.controller("CategoryListCtrl", [ '$scope', 'Category',
 			console.info('CategoryListCtrl');
 			$scope.categories = Category.query();
 
+			// UI Column logic
+			/*
+			 * $scope.totalCol = 4; $scope.colCategories = [];
+			 * 
+			 * for(i =1; i <=totalCol; i++){ for(j = 1; j <= categories.length;
+			 * j = j + totalCol){ colCategories[i][j] = categories[j]; } }
+			 */
 		} ]);
 
 classifiedControllers.controller("SubCategoryListCtrl", [ '$scope',
@@ -16,6 +23,17 @@ classifiedControllers.controller("SubCategoryListCtrl", [ '$scope',
 			console.info('SubCategoryListCtrl');
 			console.info($routeParams);
 			$scope.items = SubCategory.query();
+
+			// list type selector
+			$scope.selected = 'list';
+			$scope.listSelect = function(value) {
+				$scope.selected = value;
+			};
+
+			$scope.isSet = function(value) {
+				return $scope.selected === value;
+			};
+
 		} ]);
 
 classifiedControllers.controller("ItemDetailCtrl", [ '$scope', '$routeParams',
@@ -45,5 +63,9 @@ classifiedControllers.controller("ItemDetailCtrl", [ '$scope', '$routeParams',
 
 			};
 
-		}
-]);
+		} ]);
+
+classifiedControllers.controller("postAdCtrl", [ '$scope', 'Category',
+		function($scope, Category) {
+			console.info('postAdCtrl');
+		} ]);

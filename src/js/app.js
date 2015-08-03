@@ -11,13 +11,15 @@ classifiedApp.config([ '$routeProvider', function($routeProvider) {
 	}).when('/categories/:categoryId', {
 		templateUrl : 'fragments/subcategory-list.html',
 		controller : 'SubCategoryListCtrl'
-	}).
-	when('/categories/:categoryId/:subcategoryId', {
+	}).when('/categories/:categoryId/:subcategoryId', {
 		templateUrl : 'fragments/subcategory-list.html',
 		controller : 'SubCategoryListCtrl'
 	}).when('/categories/:categoryId/:subcategoryId/:itemId', {
 		templateUrl : 'fragments/item-details.html',
 		controller : 'ItemDetailCtrl'
+	}).when('/postad', {
+		templateUrl : 'fragments/post-ad.html',
+		controller : 'postAdCtrl'
 	}).otherwise({
 		redirectTo : '/'
 	});
